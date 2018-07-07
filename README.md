@@ -1,9 +1,9 @@
-Autoscroll for Flow Router
+Autoscroll for Flow Router Extra
 ==========================
 
 Based/Forked from [Autoscroll for Iron Router](https://github.com/okgrow/iron-router-autoscroll) by OK GROW!
 
-A [Flow Router](https://atmospherejs.com/kadira/flow-router) enhancement that improves navigation for pages that have more than one screen-ful of content.
+A [Flow Router](https://github.com/VeliovGroup/flow-router) enhancement that improves navigation for pages that have more than one screen-ful of content.
 It causes the page to scroll to the right place after changing routes (which people are often surprised to find doesn't happen by default with Flow Router).
 
 "The right place" is:
@@ -24,7 +24,7 @@ So when navigating from a page that's scrolled down already this feels to the us
 Installation
 ----------
 
-`meteor add tomwasd:flow-router-autoscroll`
+`meteor add skt:flow-router-autoscroll`
 
 
 Configuration
