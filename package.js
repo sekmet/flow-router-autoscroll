@@ -8,7 +8,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.4');
-  api.use('ostrio:flow-router-extra@3.5.0');
+  api.use('ostrio:flow-router-extra', {weak: true});
   api.addFiles('client/autoscroll.js', 'client');
   api.export('FlowRouterAutoscroll', 'client');
 });
