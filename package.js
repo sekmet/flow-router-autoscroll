@@ -6,9 +6,9 @@ Package.describe({
   documentation: 'README.md'
 });
 
-Package.onUse(function(api) {
-  api.versionsFrom('1.4');
-  api.use('ostrio:flow-router-extra', {weak: true});
-  api.addFiles('client/autoscroll.js', 'client');
+Package.onUse((api) => {
+  api.versionsFrom('1.4.3.1');
+  api.use('ostrio:flow-router-extra', 'client', {weak: true});
   api.export('FlowRouterAutoscroll', 'client');
+  api.addFiles('client/autoscroll.js', 'client');
 });
