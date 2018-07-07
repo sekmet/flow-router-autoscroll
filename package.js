@@ -7,8 +7,11 @@ Package.describe({
 });
 
 Package.onUse((api) => {
-  api.versionsFrom('1.4.3.1');
-  api.use('ostrio:flow-router-extra', 'client', {weak: true});
-  api.export('FlowRouterAutoscroll', 'client');
-  api.addFiles('client/autoscroll.js', 'client');
+    api.versionsFrom('1.4');
+    api.use('ecmascript');
+    api.use('tracker')
+    api.use('ostrio:flow-router-extra');
+    api.imply('ostrio:flow-router-extra');
+
+    api.mainModule('client/autoscroll.js', 'client');
 });
